@@ -1,1 +1,1 @@
-[{"metadata":[{"Document":"DemoProjects","Queries":[{"QueryName":"Query1","SQL":"select * from table1 where tenantId = ?"},{"QueryName":"Query2","SQL":"select * from table2 where tenantId = ?"}]}]}]
+"[{\"metadata\":[{\"Document\":\"DemoProjects\",\"Queries\":[{\"QueryName\":\"Query1\",\"SQL\":\"select * from table1 where tenantId = ?\"},{\"QueryName\":\"Query2\",\"SQL\":\"select * from table2 where tenantId = ?\"}]}]}]"
