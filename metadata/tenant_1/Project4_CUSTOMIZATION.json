@@ -1,0 +1,61 @@
+[
+{
+
+  
+  "metadata":[
+
+    {
+  "Document": "Project4",
+
+      "events":  [
+
+        {
+
+          "event"      : "Pre-Query",
+
+          "Extension"  : ["standard.Authorization",
+"sampleExtension"]    
+        
+},
+
+        {
+
+          "event"      : "Pre-Submit",
+
+          "Extension"  : ["standard.Authorization",
+"sampleExtension"]    
+        
+},
+
+        {
+
+          "event"      : "Post-Query",
+
+          "Extension" : ["samplePostExtension"]
+        
+},
+
+        {
+
+          "event"      : "Post-Submit",
+
+          "Extension" : [
+]
+        
+},
+
+        {
+
+          "event"      : "VALIDATION",
+
+          "Extension" : [
+]
+        
+}
+      ]
+
+    
+}
+]
+
+}]
