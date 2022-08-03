@@ -10,7 +10,7 @@
           },
           {
             "QueryName": "Query2",
-            "SQL": "select * from table2 where tenantId = ?1"
+            "SQL": "select * from table2 where tenantId = ?"
           }
         ]
       }
