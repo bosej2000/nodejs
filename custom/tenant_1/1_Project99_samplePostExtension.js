@@ -18,5 +18,5 @@ module.exports =
 {
   execute_post_query_extension : execute_post_query_extension,
   execute_post_submit_extension: execute_post_submit_extension,
-  execute_validation_extension: execute_validation_extension1
+  execute_validation_extension: execute_validation_extension
 }
