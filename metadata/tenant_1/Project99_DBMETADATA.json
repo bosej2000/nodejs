@@ -16,7 +16,7 @@
                 "baseType": "VARCHAR(1)",
                 "Required": true,
                 "JOI": "Joi.string().alphanum().min(1).max(1).required()",
-                "Key": "YRitts"
+                "Key": "Y"
               }
             ]
           }
