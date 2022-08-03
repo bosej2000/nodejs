@@ -11,5 +11,5 @@ function execute_pre_submit_extension(appContext,client,documentName,data)
 module.exports = 
 {
   execute_pre_query_extension : execute_pre_query_extension,
-  execute_pre_submit_extension : execute_pre_submit_extension1
+  execute_pre_submit_extension : execute_pre_submit_extension
 }
