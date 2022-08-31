@@ -1,0 +1,46 @@
+[
+  {
+    "metadata": [
+      {
+        "Document": "Portfolio",
+        "events": [
+          {
+            "event": "Pre-Query",
+            "Extension": [
+              "standard.Authorization",
+              "sampleExtension"
+            ]
+          },
+          {
+            "event": "Pre-Submit",
+            "Extension": [
+              "standard.Authorization",
+              "sampleExtension"
+            ]
+          },
+          {
+            "event": "Post-Query",
+            "Extension": [
+              "samplePostExtension",
+              "1_Portfolio_samplePostExtension"
+            ]
+          },
+          {
+            "event": "Post-Submit",
+            "Extension": [
+              "samplePostExtension",
+              "1_Portfolio_samplePostExtension"
+            ]
+          },
+          {
+            "event": "VALIDATION",
+            "Extension": [
+              "samplePostExtension",
+              "1_Portfolio_samplePostExtension"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
