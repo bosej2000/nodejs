@@ -1,0 +1,289 @@
+[
+  {
+    "metadata": [
+      {
+        "Document": "Portfolio",
+        "Objects": [
+          {
+            "Name": "Portfolio",
+            "Table": "fntl_portfolio",
+            "Level": 1,
+            "Columns": [
+              {
+                "column": "last_update_date",
+                "dbColumn": "last_update_date",
+                "Type": "data",
+                "baseType": "date",
+                "Required": true,
+                "JOI": "Joi.any()",
+                "Key": "N"
+              },
+              {
+                "column": "public",
+                "dbColumn": "public",
+                "Type": "data",
+                "baseType": "integer",
+                "Required": true,
+                "JOI": "Joi.any()",
+                "Key": "N"
+              },
+              {
+                "column": "default_org_id",
+                "dbColumn": "default_org_id",
+                "Type": "data",
+                "baseType": "integer",
+                "Required": true,
+                "JOI": "Joi.any()",
+                "Key": "N"
+              },
+              {
+                "column": "portfolio_id",
+                "dbColumn": "portfolio_id",
+                "Primary": true,
+                "Type": "DEFAULT",
+                "JOI": "Joi.any()",
+                "Key": "Y"
+              },
+              {
+                "column": "published",
+                "dbColumn": "published",
+                "Type": "data",
+                "baseType": "integer",
+                "Required": true,
+                "JOI": "Joi.any()",
+                "Key": "N"
+              },
+              {
+                "column": "creation_date",
+                "dbColumn": "creation_date",
+                "Type": "data",
+                "baseType": "date",
+                "Required": true,
+                "JOI": "Joi.any()",
+                "Key": "N"
+              },
+              {
+                "column": "compiled_query",
+                "dbColumn": "compiled_query",
+                "Type": "data",
+                "baseType": "text",
+                "Required": true,
+                "JOI": "Joi.any()",
+                "Key": "N"
+              },
+              {
+                "column": "created_by",
+                "dbColumn": "created_by",
+                "Type": "data",
+                "baseType": "VARCHAR(100)",
+                "Required": true,
+                "JOI": "Joi.any()",
+                "Key": "N"
+              },
+              {
+                "column": "last_updated_by",
+                "dbColumn": "last_updated_by",
+                "Type": "data",
+                "baseType": "VARCHAR(100)",
+                "Required": true,
+                "JOI": "Joi.any()",
+                "Key": "N"
+              },
+              {
+                "column": "last_login_id",
+                "dbColumn": "last_login_id",
+                "Type": "data",
+                "baseType": "VARCHAR(100)",
+                "Required": true,
+                "JOI": "Joi.any()",
+                "Key": "N"
+              },
+              {
+                "column": "portfolio_name",
+                "dbColumn": "portfolio_name",
+                "Type": "data",
+                "baseType": "VARCHAR(255)",
+                "Required": true,
+                "JOI": "Joi.any()",
+                "Key": "N"
+              },
+              {
+                "column": "description",
+                "dbColumn": "description",
+                "Type": "data",
+                "baseType": "text",
+                "Required": true,
+                "JOI": "Joi.any()",
+                "Key": "N"
+              },
+              {
+                "column": "default_view",
+                "dbColumn": "default_view",
+                "Type": "data",
+                "baseType": "text",
+                "Required": true,
+                "JOI": "Joi.any()",
+                "Key": "N"
+              },
+              {
+                "column": "CRUD",
+                "dbColumn": "",
+                "Type": "data",
+                "baseType": "VARCHAR(1)",
+                "Required": true,
+                "JOI": "Joi.string().alphanum().min(1).max(1).required()",
+                "Key": "N"
+              },
+              {
+                "column": "PortfolioDetails",
+                "dbColumn": "PortfolioDetails",
+                "Type": "Child",
+                "Key": "N"
+              }
+            ]
+          },
+          {
+            "Name": "PortfolioDetails",
+            "Table": "fntl_portfolio_details",
+            "Level": 2,
+            "Columns": [
+              {
+                "column": "creation_date",
+                "dbColumn": "creation_date",
+                "Type": "data",
+                "baseType": "date",
+                "Required": true,
+                "JOI": "Joi.any()",
+                "Key": "N"
+              },
+              {
+                "column": "last_update_date",
+                "dbColumn": "last_update_date",
+                "Type": "data",
+                "baseType": "date",
+                "Required": true,
+                "JOI": "Joi.any()",
+                "Key": "N"
+              },
+              {
+                "column": "portfolio_details_id",
+                "dbColumn": "portfolio_details_id",
+                "Primary": true,
+                "Type": "DEFAULT",
+                "JOI": "Joi.any()",
+                "Key": "Y"
+              },
+              {
+                "column": "portfolio_id",
+                "dbColumn": "portfolio_id",
+                "Type": "Reference",
+                "baseType": "INTEGER",
+                "JOI": "Joi.any()",
+                "Key": "Y"
+              },
+              {
+                "column": "line_id",
+                "dbColumn": "line_id",
+                "Type": "data",
+                "baseType": "integer",
+                "Required": true,
+                "JOI": "Joi.any()",
+                "Key": "N"
+              },
+              {
+                "column": "criteria_id",
+                "dbColumn": "criteria_id",
+                "Type": "data",
+                "baseType": "integer",
+                "Required": true,
+                "JOI": "Joi.any()",
+                "Key": "N"
+              },
+              {
+                "column": "operator",
+                "dbColumn": "operator",
+                "Type": "data",
+                "baseType": "VARCHAR(255)",
+                "Required": true,
+                "JOI": "Joi.any()",
+                "Key": "N"
+              },
+              {
+                "column": "value_1",
+                "dbColumn": "value_1",
+                "Type": "data",
+                "baseType": "VARCHAR(255)",
+                "Required": true,
+                "JOI": "Joi.any()",
+                "Key": "N"
+              },
+              {
+                "column": "created_by",
+                "dbColumn": "created_by",
+                "Type": "data",
+                "baseType": "VARCHAR(100)",
+                "Required": true,
+                "JOI": "Joi.any()",
+                "Key": "N"
+              },
+              {
+                "column": "last_updated_by",
+                "dbColumn": "last_updated_by",
+                "Type": "data",
+                "baseType": "VARCHAR(100)",
+                "Required": true,
+                "JOI": "Joi.any()",
+                "Key": "N"
+              },
+              {
+                "column": "value_2",
+                "dbColumn": "value_2",
+                "Type": "data",
+                "baseType": "VARCHAR(255)",
+                "Required": true,
+                "JOI": "Joi.any()",
+                "Key": "N"
+              },
+              {
+                "column": "last_login_id",
+                "dbColumn": "last_login_id",
+                "Type": "data",
+                "baseType": "VARCHAR(100)",
+                "Required": true,
+                "JOI": "Joi.any()",
+                "Key": "N"
+              },
+              {
+                "column": "criteria_type",
+                "dbColumn": "criteria_type",
+                "Type": "data",
+                "baseType": "VARCHAR(255)",
+                "Required": true,
+                "JOI": "Joi.any()",
+                "Key": "N"
+              },
+              {
+                "column": "criteria_value",
+                "dbColumn": "criteria_value",
+                "Type": "data",
+                "baseType": "VARCHAR(255)",
+                "Required": true,
+                "JOI": "Joi.any()",
+                "Key": "N"
+              },
+              {
+                "column": "CRUD",
+                "dbColumn": "",
+                "Type": "data",
+                "baseType": "VARCHAR(1)",
+                "Required": true,
+                "JOI": "Joi.string().alphanum().min(1).max(1).required()",
+                "Key": "N"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
