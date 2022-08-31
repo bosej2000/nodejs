@@ -1,0 +1,29 @@
+[
+  {
+    "metadata": [
+      {
+        "Document": "Portfolio",
+        "Queries": [
+          {
+            "QueryName": "GetPortfolioHeader",
+            "SQL": "select portfolio_id, portfolio_name, description, public, published from fntl_portfolio fp where tenant_id = ? and portfolio_id = $1"
+          },
+          {
+            "QueryName": "GetPortfolioDetails",
+            "SQL": "select portfolio_id, criteria_id, criteria_type, 'operator' as criteria_operator, value_1, value_2  from fntl_portfolio_details fpd where tenant_id = ? and portfolio_id = $1"
+          },
+          {
+            "QueryName": "GetPortfolioInfo",
+            "SQL": "select attr_1 as project_count, attr_2 as project_currency from tmp_query_tbl where tenant_id = ? and attr_3 = $1",
+            "tempTable": "tmp_query_tbl",
+            "queryProcess": "genProjectCurrencyInfo"
+          },
+          {
+            "QueryName": "GetPortfolioLikeTest",
+            "SQL": "select person_id, employee_number, full_name from fntl_person where tenant_id = ? and full_name like '%'||$1||'%'"
+          }
+        ]
+      }
+    ]
+  }
+]
