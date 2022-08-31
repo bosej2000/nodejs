@@ -1,0 +1,141 @@
+[
+  {
+    "metadata": [
+      {
+        "Document": "Portfolio",
+        "Fields": [
+          {
+            "key": "DB-Portfolio",
+            "rules": [
+              {
+                "name": "last_update_date",
+                "joi": "Joi.any()"
+              },
+              {
+                "name": "public",
+                "joi": "Joi.any()"
+              },
+              {
+                "name": "default_org_id",
+                "joi": "Joi.any()"
+              },
+              {
+                "name": "portfolio_id",
+                "joi": "Joi.any()"
+              },
+              {
+                "name": "published",
+                "joi": "Joi.any()"
+              },
+              {
+                "name": "creation_date",
+                "joi": "Joi.any()"
+              },
+              {
+                "name": "compiled_query",
+                "joi": "Joi.any()"
+              },
+              {
+                "name": "created_by",
+                "joi": "Joi.any()"
+              },
+              {
+                "name": "last_updated_by",
+                "joi": "Joi.any()"
+              },
+              {
+                "name": "last_login_id",
+                "joi": "Joi.any()"
+              },
+              {
+                "name": "portfolio_name",
+                "joi": "Joi.any()"
+              },
+              {
+                "name": "description",
+                "joi": "Joi.any()"
+              },
+              {
+                "name": "default_view",
+                "joi": "Joi.any()"
+              },
+              {
+                "name": "CRUD",
+                "joi": "Joi.string().alphanum().min(1).max(1).required()"
+              },
+              {
+                "name": "PortfolioDetails",
+                "link": "PortfolioDetails"
+              }
+            ]
+          },
+          {
+            "key": "PortfolioDetails",
+            "rules": [
+              {
+                "name": "creation_date",
+                "joi": "Joi.any()"
+              },
+              {
+                "name": "last_update_date",
+                "joi": "Joi.any()"
+              },
+              {
+                "name": "portfolio_details_id",
+                "joi": "Joi.any()"
+              },
+              {
+                "name": "portfolio_id",
+                "joi": "Joi.any()"
+              },
+              {
+                "name": "line_id",
+                "joi": "Joi.any()"
+              },
+              {
+                "name": "criteria_id",
+                "joi": "Joi.any()"
+              },
+              {
+                "name": "operator",
+                "joi": "Joi.any()"
+              },
+              {
+                "name": "value_1",
+                "joi": "Joi.any()"
+              },
+              {
+                "name": "created_by",
+                "joi": "Joi.any()"
+              },
+              {
+                "name": "last_updated_by",
+                "joi": "Joi.any()"
+              },
+              {
+                "name": "value_2",
+                "joi": "Joi.any()"
+              },
+              {
+                "name": "last_login_id",
+                "joi": "Joi.any()"
+              },
+              {
+                "name": "criteria_type",
+                "joi": "Joi.any()"
+              },
+              {
+                "name": "criteria_value",
+                "joi": "Joi.any()"
+              },
+              {
+                "name": "CRUD",
+                "joi": "Joi.string().alphanum().min(1).max(1).required()"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
