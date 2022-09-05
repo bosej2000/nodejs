@@ -1,0 +1,15 @@
+[
+  {
+    "metadata": [
+      {
+        "Document": "ProjectList",
+        "Queries": [
+          {
+            "QueryName": "MyProjects",
+            "SQL": "SELECT p.project_id, p.tenant_id, p.project_number, p.project_name, p.project_status, p.sch_start_date, p.sch_end_date, d.level8_org_name AS department, c.customer_name, d.level9_org_name AS carrying_out_organization FROM   acm_projects p JOIN fntl_org_hierarchy_denorm d ON p.organization_id = d.level9_org_id JOIN acm_project_customer_v c ON c.project_id = p.project_id WHERE  EXISTS (SELECT * FROM   acm_project_key_members k JOIN fntl_user u ON k.project_id = p.project_id AND k.person_id = u.person_id AND k.start_date <= CURRENT_DATE AND k.end_date >= CURRENT_DATE AND u.user_name = '$user_name') and p.tenant_id = ?"
+          }
+        ]
+      }
+    ]
+  }
+]
