@@ -1,0 +1,38 @@
+[
+  {
+    "metadata": [
+      {
+        "Document": "ProjectList",
+        "events": [
+          {
+            "event": "Pre-Query",
+            "Extension": [
+              "standard.Authorization"
+            ]
+          },
+          {
+            "event": "Pre-Submit",
+            "Extension": [
+              "standard.Authorization",
+              "sampleExtension"
+            ]
+          },
+          {
+            "event": "Post-Query",
+            "Extension": [
+              "1_ProjectList_samplePostExtension.js"
+            ]
+          },
+          {
+            "event": "Post-Submit",
+            "Extension": []
+          },
+          {
+            "event": "VALIDATION",
+            "Extension": []
+          }
+        ]
+      }
+    ]
+  }
+]
